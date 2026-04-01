@@ -194,38 +194,3 @@ document.querySelectorAll('.modal-content').forEach((modal) => {
    ============================================ */
 // console.log('✅ script.js loaded successfully | Sam G. Portfolio');
 
-/* ===== MODAL FUNCTIONS ===== */
-function openModal(imageSrc, caption, downloadLink) {
-  const modal = document.getElementById('previewModal');
-  const modalImg = document.getElementById('modalImage');
-  const modalCaption = document.getElementById('modalCaption');
-  const modalDownload = document.getElementById('modalDownload');
-  
-  modal.style.display = 'block';
-  modalImg.src = imageSrc;
-  modalCaption.textContent = caption;
-  modalDownload.href = downloadLink;
-  
-  // Disable body scroll when modal is open
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal() {
-  document.getElementById('previewModal').style.display = 'none';
-  document.body.style.overflow = 'auto'; // Re-enable scroll
-}
-
-// Close modal when clicking outside content
-window.onclick = function(event) {
-  const modal = document.getElementById('previewModal');
-  if (event.target === modal) {
-    closeModal();
-  }
-}
-
-// Close modal with Escape key
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    closeModal();
-  }
-});
