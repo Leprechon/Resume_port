@@ -53,16 +53,18 @@
                 <li><a href="https://github.com/Gosille" target="_blank">💻 GitHub Profile</a></li>
             </ul>
 
-            <!-- Resume Section -->
-            <div class="resume-section">
-                <p>My Resume</p>
-                <div class="resume-buttons">
-                    <a href="assets/Resume-Goyena.pdf" target="_blank" class="btn btn-outline">View</a>
-                    <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">Download</a>
-                </div>
-                <p class="file-info"><em>If PDF opens in browser, use the ⬇️ icon in the viewer to save.</em></p>
-            </div>
-        </div>
+           <!-- Resume Section -->
+<div class="resume-section">
+  <p>My Resume</p>
+  <div class="resume-buttons">
+    <!-- ✅ View opens modal preview -->
+    <button onclick="openModal('assets/images/resume-preview.png', 'Samantha Goyena - IT Resume', 'assets/Resume-Goyena.pdf')" 
+            class="btn btn-outline" style="cursor:pointer;">👁️ View</button>
+    <!-- ✅ Download keeps direct PDF link -->
+    <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">⬇️ Download</a>
+  </div>
+  <p class="file-info"><em>Preview loads instantly. Use Download for full PDF.</em></p>
+</div>
 
         <!-- Main Content -->
         <div class="main">
@@ -126,22 +128,37 @@
                     <li>End-user training and support</li>
                 </ul>
                 
-                <!-- SAP Certifications -->
-                <div class="project-certs" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #c8e6c9;">
-                    <p><strong>Certifications Earned:</strong></p>
-                    <ul class="cert-list" style="list-style: none; padding: 0; margin: 10px 0;">
-                        <li style="margin: 8px 0;">
-                            <a href="assets/certificates/P%26G-SAP-ABAP.pdf" target="_blank" class="cert-link">P&G SAP ABAP Certificate</a>
-                        </li>
-                        <li style="margin: 8px 0;">
-                            <a href="assets/certificates/P%26G-SAP-S4HANA.pdf" target="_blank" class="cert-link">P&G SAP S/4HANA Developer Certificate</a>
-                        </li>
-                        <li style="margin: 8px 0;">
-                            <a href="assets/certificates/P%26G-SAP5-Fiori.pdf" target="_blank" class="cert-link">P&G SAPUI5 & FIORI Developer Certificate</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+              <!-- SAP Certifications -->
+<div class="project-certs" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #c8e6c9;">
+  <p><strong>Certifications Earned:</strong></p>
+  <ul class="cert-list" style="list-style: none; padding: 0; margin: 10px 0;">
+    <li style="margin: 8px 0;">
+      <!-- ✅ View opens modal, Download keeps PDF link -->
+      <button onclick="openModal('assets/images/cert-abap-preview.png', 'P&G SAP ABAP Certificate', 'assets/certificates/PG-SAP-ABAP.pdf')" 
+              class="cert-link" style="background:none; border:none; color:#16a085; cursor:pointer; padding:0; font:inherit; text-decoration:underline;">
+        👁️ View Preview
+      </button>
+      <span style="margin:0 5px;">|</span>
+      <a href="assets/certificates/PG-SAP-ABAP.pdf" target="_blank" style="color:#666;">⬇️ Download PDF</a>
+    </li>
+    <li style="margin: 8px 0;">
+      <button onclick="openModal('assets/images/cert-s4hana-preview.png', 'P&G SAP S/4HANA Developer Certificate', 'assets/certificates/PG-SAP-S4HANA.pdf')" 
+              class="cert-link" style="background:none; border:none; color:#16a085; cursor:pointer; padding:0; font:inherit; text-decoration:underline;">
+        👁️ View Preview
+      </button>
+      <span style="margin:0 5px;">|</span>
+      <a href="assets/certificates/PG-SAP-S4HANA.pdf" target="_blank" style="color:#666;">⬇️ Download PDF</a>
+    </li>
+    <li style="margin: 8px 0;">
+      <button onclick="openModal('assets/images/cert-fiori-preview.png', 'P&G SAPUI5 & FIORI Developer Certificate', 'assets/certificates/PG-SAP5-Fiori.pdf')" 
+              class="cert-link" style="background:none; border:none; color:#16a085; cursor:pointer; padding:0; font:inherit; text-decoration:underline;">
+        👁️ View Preview
+      </button>
+      <span style="margin:0 5px;">|</span>
+      <a href="assets/certificates/PG-SAP5-Fiori.pdf" target="_blank" style="color:#666;">⬇️ Download PDF</a>
+    </li>
+  </ul>
+</div>
 
             <!-- PERSONAL PORTFOLIO WEBSITE -->
             <div class="project-card">
@@ -185,5 +202,16 @@
     </div>
 
     <script src="js/script.js"></script>
+
+    <!-- 🔽 MODAL POPUP FOR PREVIEWS 🔽 -->
+<div id="previewModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Preview">
+    <p id="modalCaption" class="modal-caption"></p>
+    <a id="modalDownload" href="#" class="btn" target="_blank" style="margin-top:10px;">⬇️ Download Full PDF</a>
+  </div>
+</div>
+
 </body>
 </html>
