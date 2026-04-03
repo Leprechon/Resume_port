@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Sam G. </title>
+    <title>Home - Sam G.</title>
     <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/x-icon" href="images/icon/JJK.ico">
+    <link rel="icon" type="image/x-icon" href="images/icon/JJK.ico">
 </head>
 <body>
     <!-- Scroll to Top Button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
-  <!-- Header -->
-<div class="header">
-    <h1>Sam G.</h1>
-    <p>IT Graduate | QA Intern | Tech Support | Web-Based Project Developer</p>
-</div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Sam G.</h1>
+        <p>IT Graduate | QA Intern | Tech Support | Web-Based Project Developer</p>
+    </div>
 
     <!-- Navigation -->
     <div class="navbar">
@@ -30,12 +30,12 @@
     <div class="row">
         <!-- Sidebar -->
         <div class="side">
-            <h2> Profile</h2>
-            <p><strong> Location:</strong> Marikina City, PH</p>
-            <p><strong> Email:</strong> Samwellgoyena@Gmail.com</p>
-            <p><strong> Phone:</strong> +63 962 091 5738</p>
+            <h2>Profile</h2>
+            <p><strong>Location:</strong> Marikina City, PH</p>
+            <p><strong>Email:</strong> Samwellgoyena@Gmail.com</p>
+            <p><strong>Phone:</strong> +63 962 091 5738</p>
 
-            <h3> Technical Skills</h3>
+            <h3>Technical Skills</h3>
             <ul>
                 <li>IT Troubleshooting</li>
                 <li>QA Testing & Documentation</li>
@@ -44,7 +44,7 @@
                 <li>Microsoft Excel</li>
             </ul>
 
-            <h3> Certifications</h3>
+            <h3>Certifications</h3>
             <ul>
                 <li>P&G SAP ABAP</li>
                 <li>SAP S/4HANA Developer</li>
@@ -52,131 +52,121 @@
                 <li>JavaScript Essentials 1 (Cisco)</li>
             </ul>
 
-            <h3> Languages</h3>
+            <h3>Languages</h3>
             <ul>
                 <li>English (Professional)</li>
                 <li>Tagalog (Native)</li>
             </ul>
-<!-- Resume Section (View + Download) -->
-<div class="resume-section">
-    <p> My Resume</p>
-    
-    <div class="resume-buttons">
-        <!-- VIEW: Opens PDF in browser for preview -->
-        <a href="images/Resume_Preview.jpg" target="_blank" class="btn btn-outline">
-             View
-        </a>
-        
-        <!-- DOWNLOAD: Attempts direct download -->
-        <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">
-            Download
-        </a>
-    </div>
-    
-    <p class="file-info">
-        <em> If PDF opens in browser, Click the viewer to save.</em>
-    </p>
-</div>
+
+            <!-- Resume Section -->
+            <div class="resume-section">
+                <p>My Resume</p>
+                <div class="resume-buttons">
+                    <button onclick="openResumeModal()" class="btn btn-outline">👁️ View</button>
+                    <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">📥 Download</a>
+                </div>
+                <p class="file-info"><em>Preview without leaving the page.</em></p>
+            </div>
         </div>
-        
+        <!-- END .side -->
 
         <!-- Main Content -->
         <div class="main">
-            <h2> About Me</h2>
+            <h2>About Me</h2>
             <p>I'm a recent <strong>BS Information Technology</strong> graduate from AMA Computer College – Pasig. During my OJT at <strong>Cuatrix Consulting Services (P&G Project)</strong>, I worked as a QA and Tech Support trainee where I learned to troubleshoot issues, document processes, and support end-users.</p>
             <p>Before IT, I worked as a <strong>Call Center Agent for Cathay Pacific Airlines</strong> at WNS Global Services, which helped me develop strong communication skills and the ability to stay calm under pressure.</p>
-            <p>Now, I'm eager to combine my <strong>technical knowledge</strong> with my <strong>customer service experience</strong> in an IT role where I can keep learning and growing. </p>
+            <p>Now, I'm eager to combine my <strong>technical knowledge</strong> with my <strong>customer service experience</strong> in an IT role where I can keep learning and growing.</p>
             <hr>
 
             <h2>Experience</h2>
 
-<div class="experience-item">
-    <h3>Data & Consultant Support Intern</h3>
-    <p><strong>Cuatrix Consulting Services (P&G Project)</strong> | <em>Apr 2025 – Jul 2025</em></p>
-    <ul>
-        <li>Extracted, organized, and validated operational data for reporting and process updates</li>
-        <li>Supported consultants with documentation, workflow tracking, and structured data summaries</li>
-        <li>Resolved file inconsistencies and performed basic system troubleshooting</li>
-        <li>Handled secure documentation in compliance with enterprise data standards</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Data & Consultant Support Intern</h3>
+                <p><strong>Cuatrix Consulting Services (P&G Project)</strong> | <em>Apr 2025 – Jul 2025</em></p>
+                <ul>
+                    <li>Extracted, organized, and validated operational data for reporting and process updates</li>
+                    <li>Supported consultants with documentation, workflow tracking, and structured data summaries</li>
+                    <li>Resolved file inconsistencies and performed basic system troubleshooting</li>
+                    <li>Handled secure documentation in compliance with enterprise data standards</li>
+                </ul>
+            </div>
 
-<!-- After your Cuatrix experience div -->
-<div style="text-align: center; margin: 20px 0;">
-    <button class="btn btn-outline" onclick="openCuatrixGallery()" style="cursor: pointer;">
-        📸 View Cuatrix OJT Photos
-    </button>
-</div>
+            <!-- Cuatrix Gallery Button -->
+            <div style="text-align: center; margin: 20px 0;">
+                <button class="btn btn-outline" onclick="openCuatrixGallery()" style="cursor: pointer;">
+                    📸 View Cuatrix OJT Photos
+                </button>
+            </div>
 
-<div class="experience-item">
-    <h3>Travel Account Specialist</h3>
-    <p><strong>WNS Global Services (Cathay Pacific Account)</strong> | <em>Apr 2023 – Jul 2024</em></p>
-    <ul>
-        <li>Managed booking systems for flights and travel arrangements</li>
-        <li>Utilized internal platforms to process customer requests and itinerary updates</li>
-        <li>Resolved transaction issues while maintaining accurate system documentation</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Travel Account Specialist</h3>
+                <p><strong>WNS Global Services (Cathay Pacific Account)</strong> | <em>Apr 2023 – Jul 2024</em></p>
+                <ul>
+                    <li>Managed booking systems for flights and travel arrangements</li>
+                    <li>Utilized internal platforms to process customer requests and itinerary updates</li>
+                    <li>Resolved transaction issues while maintaining accurate system documentation</li>
+                </ul>
+            </div>
 
-<!-- After your WNS experience div -->
-<div style="text-align: center; margin: 20px 0;">
-    <button class="btn btn-outline" onclick="openWNSGallery()" style="cursor: pointer;">
-        📸 View WNS Work Photos
-    </button>
-</div>
+            <!-- WNS Gallery Button -->
+            <div style="text-align: center; margin: 20px 0;">
+                <button class="btn btn-outline" onclick="openWNSGallery()" style="cursor: pointer;">
+                    📸 View WNS Work Photos
+                </button>
+            </div>
 
-<div class="experience-item">
-    <h3>Compliance Analyst</h3>
-    <p><strong>Inspiro Relia, Inc.</strong> | <em>Jan 2023 – Feb 2023</em></p>
-    <ul>
-        <li>Analyzed customer data to detect fraud patterns and suspicious activities</li>
-        <li>Identified phishing attempts and deceptive transactions using monitoring systems</li>
-        <li>Prepared compliance reports to support risk mitigation initiatives</li>
-        <li>Maintained strict data confidentiality and security standards</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Compliance Analyst</h3>
+                <p><strong>Inspiro Relia, Inc.</strong> | <em>Jan 2023 – Feb 2023</em></p>
+                <ul>
+                    <li>Analyzed customer data to detect fraud patterns and suspicious activities</li>
+                    <li>Identified phishing attempts and deceptive transactions using monitoring systems</li>
+                    <li>Prepared compliance reports to support risk mitigation initiatives</li>
+                    <li>Maintained strict data confidentiality and security standards</li>
+                </ul>
+            </div>
 
-<div class="experience-item">
-    <h3>Sales & Customer Service Specialist</h3>
-    <p><strong>Inspiro Relia, Inc.</strong> | <em>Nov 2022 – Jan 2023</em></p>
-    <ul>
-        <li>Managed customer accounts through CRM and internal tracking systems</li>
-        <li>Processed orders and monitored transaction records for accuracy</li>
-        <li>Investigated account discrepancies and documented resolutions</li>
-        <li>Ensured proper data entry and record maintenance</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Sales & Customer Service Specialist</h3>
+                <p><strong>Inspiro Relia, Inc.</strong> | <em>Nov 2022 – Jan 2023</em></p>
+                <ul>
+                    <li>Managed customer accounts through CRM and internal tracking systems</li>
+                    <li>Processed orders and monitored transaction records for accuracy</li>
+                    <li>Investigated account discrepancies and documented resolutions</li>
+                    <li>Ensured proper data entry and record maintenance</li>
+                </ul>
+            </div>
 
-<!-- After your Inspiro experience div -->
-<div style="text-align: center; margin: 20px 0;">
-    <button class="btn btn-outline" onclick="openInspiroGallery()" style="cursor: pointer;">
-        📸 View Inspiro Work Photos
-    </button>
-</div>
+            <!-- Inspiro Gallery Button -->
+            <div style="text-align: center; margin: 20px 0;">
+                <button class="btn btn-outline" onclick="openInspiroGallery()" style="cursor: pointer;">
+                    📸 View Inspiro Work Photos
+                </button>
+            </div>
 
-<div class="experience-item">
-    <h3>Volunteer Data Encoder – Healthcare Program</h3>
-    <p><strong>Resbakuna: Kasanga ng Bida</strong> | <em>Nov 2021</em></p>
-    <ul>
-        <li>Encoded and verified vaccination records using digital data systems</li>
-        <li>Organized participant information ensuring accuracy and completeness</li>
-        <li>Supported community health documentation and reporting processes</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Volunteer Data Encoder – Healthcare Program</h3>
+                <p><strong>Resbakuna: Kasanga ng Bida</strong> | <em>Nov 2021</em></p>
+                <ul>
+                    <li>Encoded and verified vaccination records using digital data systems</li>
+                    <li>Organized participant information ensuring accuracy and completeness</li>
+                    <li>Supported community health documentation and reporting processes</li>
+                </ul>
+            </div>
 
-<hr>
+            <hr>
 
             <h2>Featured Projects</h2>
             <p>Here are some of my recent works and learning projects:</p>
 
             <div class="project-card">
-                <h3> Personal Portfolio Website</h3>
+                <h3>Personal Portfolio Website</h3>
                 <p>A responsive portfolio built with HTML, CSS & JavaScript to showcase my IT journey and projects.</p>
                 <p><em>Tech: HTML5, CSS3, JavaScript</em></p>
             </div>
 
             <div class="project-card">
-                <h3> IT Support Simulation</h3>
+                <h3>IT Support Simulation</h3>
                 <p>Classroom-based troubleshooting exercises for software and hardware issues, practicing real-world IT support scenarios.</p>
                 <p><em>Tech: Windows OS, Basic Scripting, Documentation</em></p>
             </div>
@@ -191,142 +181,160 @@
                 <a href="project_me.html" class="btn">View All Projects →</a>
             </div>
         </div>
+        <!-- END .main -->
     </div>
+    <!-- END .row -->
 
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2026 SAM G. | IT Professional</p>
     </div>
 
+    <!-- ========================================== -->
+    <!-- ✅ RESUME MODAL (Added - for View button) -->
+    <!-- ========================================== -->
+    <div id="resumeModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content" style="max-width: 900px; padding: 20px;">
+            <span class="close-modal" onclick="closeResumeModal()">&times;</span>
+            <h3 style="text-align: center; margin-bottom: 15px;">📄 My Resume</h3>
+            <div style="text-align: center;">
+                <img src="images/Resume_Preview.jpg" alt="Resume Preview" 
+                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">📥 Download Full PDF</a>
+            </div>
+            <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">
+                Click X or outside to close
+            </p>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL 1: CUAATRIX OJT GALLERY -->
+    <!-- ========================================== -->
+    <div id="cuatrixModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCuatrixGallery()">&times;</span>
+            <h2 style="color: var(--text-heading); margin-bottom: 10px;">🏢 Cuatrix Consulting Services</h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;"><em>Data & Consultant Support Intern | Apr 2025 – Jul 2025</em></p>
+            
+            <div class="modal-gallery-grid">
+                <div class="modal-img-wrapper">
+                    <img src="images/ojt_01.jpg" alt="Our First Training" onclick="enlargeImage(this)">
+                    <div class="img-caption">Training Session for Interns</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/ojt_02.jpg" alt="Team photo" onclick="enlargeImage(this)">
+                    <div class="img-caption">Photo With Team</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/ojt_03.jpg" alt="Team Photo" onclick="enlargeImage(this)">
+                    <div class="img-caption">Take Two Photo</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/ojt/cuatrix-training.jpg" alt="Training" onclick="enlargeImage(this)">
+                    <div class="img-caption">SAP Training</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/Cuatrix_Logo.png" alt="Cuatrix Logo" onclick="enlargeImage(this)">
+                    <div class="img-caption">Cuatrix Consulting Services</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/ojt_completion.jpg" alt="OJT completion" onclick="enlargeImage(this)">
+                    <div class="img-caption">OJT Completion</div>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="closeCuatrixGallery()" style="margin-top: 25px;">Close Gallery</button>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL 2: WNS GALLERY -->
+    <!-- ========================================== -->
+    <div id="wnsModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeWNSGallery()">&times;</span>
+            <h2 style="color: var(--text-heading); margin-bottom: 10px;">✈️ WNS Global Services</h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;"><em>Travel Account Specialist (Cathay Pacific) | Apr 2023 – Jul 2024</em></p>
+            
+            <div class="modal-gallery-grid">
+                <div class="modal-img-wrapper">
+                    <img src="images/wns_team03.jpg" alt="WNS Team Training" onclick="enlargeImage(this)">
+                    <div class="img-caption">Our Training Session</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/wns_pic01.jpg" alt="Completion Certificate" onclick="enlargeImage(this)">
+                    <div class="img-caption">Completion Training Certificate</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/wns_pic04.jpg" alt="WNS team" onclick="enlargeImage(this)">
+                    <div class="img-caption">Team Photo with Colleagues</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/Cathay_pac.png" alt="Cathay Pacific" onclick="enlargeImage(this)">
+                    <div class="img-caption">Cathay Pacific Account</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/wns_pic.jpg" alt="WNS Company" onclick="enlargeImage(this)">
+                    <div class="img-caption">WNS Company</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/work/wns-farewell.jpg" alt="WNS Farewell" onclick="enlargeImage(this)">
+                    <div class="img-caption">Farewell Gathering</div>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="closeWNSGallery()" style="margin-top: 25px;">Close Gallery</button>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL 3: INSPIRO GALLERY -->
+    <!-- ========================================== -->
+    <div id="inspiroModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeInspiroGallery()">&times;</span>
+            <h2 style="color: var(--text-heading); margin-bottom: 10px;">🛡️ Inspiro Relia, Inc.</h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;"><em>Compliance Analyst & Sales Specialist | Nov 2022 – Feb 2023</em></p>
+            
+            <div class="modal-gallery-grid">
+                <div class="modal-img-wrapper">
+                    <img src="images/inspiro_pic01.jpg" alt="Inspiro Team" onclick="enlargeImage(this)">
+                    <div class="img-caption">1800's Training Team</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/inspiro_pic02.jpg" alt="Inspiro Team" onclick="enlargeImage(this)">
+                    <div class="img-caption">1800's Nesting Team</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/inspiro_pic03.jpg" alt="Inspiro Team" onclick="enlargeImage(this)">
+                    <div class="img-caption">1800's Account Team</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/1800_flowers.png" alt="1800 Flowers Logo" onclick="enlargeImage(this)">
+                    <div class="img-caption">1800 Flowers</div>
+                </div>
+                <div class="modal-img-wrapper">
+                    <img src="images/Inspiro_logo.jpg" alt="Inspiro Logo" onclick="enlargeImage(this)">
+                    <div class="img-caption">Inspiro Relia</div>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="closeInspiroGallery()" style="margin-top: 25px;">Close Gallery</button>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- IMAGE LIGHTBOX (Shared for all galleries) -->
+    <!-- ========================================== -->
+    <div id="imageModal" class="image-lightbox" style="display: none;" onclick="closeImageModal()">
+        <span class="image-close">&times;</span>
+        <img id="enlargedImage" src="" alt="Full size">
+        <div id="imageCaption" class="lightbox-caption"></div>
+    </div>
+
     <script src="js/script.js"></script>
-
-
-
-<!-- ========================================== -->
-<!-- MODAL 1: CUAATRIX OJT GALLERY -->
-<!-- ========================================== -->
-<div id="cuatrixModal" class="modal-overlay" style="display: none;">
-    <div class="modal-content">
-        <span class="close-modal" onclick="closeCuatrixGallery()">&times;</span>
-        <h2 style="color: #2c3e50; margin-bottom: 10px;">🏢 Cuatrix Consulting Services</h2>
-        <p style="color: #666; margin-bottom: 25px;"><em>Data & Consultant Support Intern | Apr 2025 – Jul 2025</em></p>
-        
-        <div class="modal-gallery-grid">
-            <div class="modal-img-wrapper">
-                <img src="images/ojt_01.jpg" alt="Our First Training" onclick="enlargeImage(this)">
-                <div class="img-caption">Training Session for Interns </div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/ojt_02.jpg" alt="Team photo" onclick="enlargeImage(this)">
-                <div class="img-caption">Photo With Team</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/ojt_03.jpg" alt="Team Photo " onclick="enlargeImage(this)">
-                <div class="img-caption">Take Two photo</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/ojt/cuatrix-training.jpg" alt="" onclick="enlargeImage(this)">
-                <div class="img-caption"></div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/Cuatrix_Logo.png" alt="Cuatrix Consulting Services Logo" onclick="enlargeImage(this)">
-                <div class="img-caption">Cuatrix Consulting Services Logo</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/ojt_completion.jpg" alt="OJT completion" onclick="enlargeImage(this)">
-                <div class="img-caption">OJT completion</div>
-            </div>
-        </div>
-        
-        <button class="btn" onclick="closeCuatrixGallery()" style="margin-top: 25px;">Close Gallery</button>
-    </div>
-</div>
-
-
-<!-- ========================================== -->
-<!-- MODAL 2: WNS GALLERY -->
-<!-- ========================================== -->
-<div id="wnsModal" class="modal-overlay" style="display: none;">
-    <div class="modal-content">
-        <span class="close-modal" onclick="closeWNSGallery()">&times;</span>
-        <h2 style="color: #2c3e50; margin-bottom: 10px;">✈️ WNS Global Services</h2>
-        <p style="color: #666; margin-bottom: 25px;"><em>Travel Account Specialist (Cathay Pacific) | Apr 2023 – Jul 2024</em></p>
-        
-        <div class="modal-gallery-grid">
-            <div class="modal-img-wrapper">
-                <img src="images/wns_team03.jpg" alt="WNS WITH tEAM" onclick="enlargeImage(this)">
-                <div class="img-caption"> Our Training Session</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/wns_pic01.jpg" alt="Completion Training Certificate" onclick="enlargeImage(this)">
-                <div class="img-caption">Completion Training Certificate</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/wns_pic04.jpg" alt="WNS team" onclick="enlargeImage(this)">
-                <div class="img-caption">Team photo with colleagues</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/Cathay_pac.png" alt="Cathay Pacific" onclick="enlargeImage(this)">
-                <div class="img-caption">Cathay Pacific account </div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/wns_pic.jpg" alt="WNS Company " onclick="enlargeImage(this)">
-                <div class="img-caption">WNS Company</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/work/wns-farewell.jpg" alt="WNS Farewell" onclick="enlargeImage(this)">
-                <div class="img-caption">Farewell Gathering</div>
-            </div>
-        </div>
-        
-        <button class="btn" onclick="closeWNSGallery()" style="margin-top: 25px;">Close Gallery</button>
-    </div>
-</div>
-
-<!-- ========================================== -->
-<!-- MODAL 3: INSPIRO GALLERY -->
-<!-- ========================================== -->
-<div id="inspiroModal" class="modal-overlay" style="display: none;">
-    <div class="modal-content">
-        <span class="close-modal" onclick="closeInspiroGallery()">&times;</span>
-        <h2 style="color: #2c3e50; margin-bottom: 10px;">🛡️ Inspiro Relia, Inc.</h2>
-        <p style="color: #666; margin-bottom: 25px;"><em>Compliance Analyst & Sales Specialist | Nov 2022 – Feb 2023</em></p>
-        
-        <div class="modal-gallery-grid">
-            <div class="modal-img-wrapper">
-                <img src="images/inspiro_pic01.jpg" alt="Inspiro Team" onclick="enlargeImage(this)">
-                <div class="img-caption">1800's Training Team</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/inspiro_pic02.jpg" alt="Inspiro Team" onclick="enlargeImage(this)">
-                <div class="img-caption">1800's Nesting Team</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/inspiro_pic03.jpg" alt="Inspiro team" onclick="enlargeImage(this)">
-                <div class="img-caption">1800's Account Team</div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/1800_flowers.png" alt=" " onclick="enlargeImage(this)">
-                <div class="img-caption"></div>
-            </div>
-            <div class="modal-img-wrapper">
-                <img src="images/Inspiro_logo.jpg" alt=" " onclick="enlargeImage(this)">
-                <div class="img-caption"></div>
-            </div>
-        </div>
-        
-        <button class="btn" onclick="closeInspiroGallery()" style="margin-top: 25px;">Close Gallery</button>
-    </div>
-</div>
-
-<!-- ========================================== -->
-<!-- IMAGE LIGHTBOX (Shared for all galleries) -->
-<!-- ========================================== -->
-<div id="imageModal" class="image-lightbox" style="display: none;" onclick="closeImageModal()">
-    <span class="image-close">&times;</span>
-    <img id="enlargedImage" src="" alt="Full size">
-    <div id="imageCaption" class="lightbox-caption"></div>
-</div>
-
 </body>
 </html>

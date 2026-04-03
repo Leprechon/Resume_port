@@ -53,14 +53,14 @@
                 <li><a href="https://github.com/Gosille" target="_blank">💻 GitHub Profile</a></li>
             </ul>
 
-            <!-- Resume Section -->
+            <!-- Resume Section (FIXED: Simple buttons, modal code at bottom) -->
             <div class="resume-section">
                 <p>My Resume</p>
                 <div class="resume-buttons">
-                    <a href="images/Resume_Preview.jpg" target="_blank" class="btn btn-outline">View</a>
-                    <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">Download</a>
+                    <button onclick="openResumeModal()" class="btn btn-outline">👁️ View</button>
+                    <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">📥 Download</a>
                 </div>
-                <p class="file-info"><em>If PDF opens in browser, use the ⬇️ icon in the viewer to save.</em></p>
+                <p class="file-info"><em>Preview without leaving the page.</em></p>
             </div>
         </div>
 
@@ -86,7 +86,6 @@
                 </ul>
                 <div class="project-links" style="margin-top: 15px; display:flex; gap:10px; flex-wrap:wrap;">
                     <a href="https://github.com/GottenTillWeMadeIt/DC_AppointmentWeb.git" class="btn" target="_blank">🔗 Live Demo</a>
-                    <!-- ✅ FIXED: Just use btn-outline class (no inline colors) -->
                     <a href="https://www.trickcode.in/" class="btn btn-outline" target="_blank">🔗 Source Code</a>
                 </div>
             </div>
@@ -106,7 +105,6 @@
                     <li>User support and communication</li>
                 </ul>
                 <div class="project-links" style="margin-top: 15px;">
-                    <!-- ✅ FIXED: Just use btn-outline class -->
                     <a href="assets/Documents/ACTIVITY-OVERVIEW.docx" class="btn btn-outline" target="_blank">📄 View Documentation</a>
                 </div>
             </div>
@@ -159,7 +157,6 @@
                 </ul>
                 <div class="project-links" style="margin-top: 15px; display:flex; gap:10px; flex-wrap:wrap;">
                     <a href="https://sites.google.com/view/hiimsam-aspiringitdeveloper/home" class="btn">View Live</a>
-                    <!-- ✅ FIXED: Just use btn-outline class -->
                     <a href="https://myport.port.ac.uk/my-course/careers-support/career-essentials/cvs-and-cover-letters/portfolio-guide" class="btn btn-outline" target="_blank">💻 Source Code</a>
                 </div>
             </div>
@@ -172,7 +169,6 @@
                 <p>Check out my GitHub for additional projects and code samples, or contact me to discuss how I can contribute to your team.</p>
                 <div style="margin-top: 15px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
                     <a href="https://github.com/Gosille" class="btn" target="_blank">View GitHub Profile</a>
-                    <!-- ✅ FIXED: Just use btn-outline class -->
                     <a href="contact_me.html" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
@@ -184,6 +180,30 @@
         <p>&copy; 2026 SAM G. | IT Professional</p>
     </div>
 
+    <!-- ✅ RESUME MODAL (Placed HERE - at end of body, NOT inside sidebar) -->
+    <div id="resumeModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content" style="max-width: 900px; padding: 20px;">
+            <span class="close-modal" onclick="closeResumeModal()">&times;</span>
+            <h3 style="text-align: center; margin-bottom: 15px;">📄 My Resume</h3>
+            <div style="text-align: center;">
+                <img src="images/Resume_Preview.jpg" alt="Resume Preview" 
+                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">📥 Download Full PDF</a>
+            </div>
+            <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">
+                Click X or outside to close
+            </p>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
+
+    <!-- Resume Modal (place before </body>) -->
+<div id="resumeModal" class="modal-overlay" style="display: none;">
+    ... (modal content) ...
+</div>
+
 </body>
 </html>

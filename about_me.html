@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - SAM G. </title>
+    <title>About Me - SAM G.</title>
     <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/x-icon" href="images/icon/JJK.ico">
+    <link rel="icon" type="image/x-icon" href="images/icon/JJK.ico">
 </head>
 <body>
     <!-- Scroll to Top Button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
-<!-- Header -->
-<div class="header">
-    <h1>About Me</h1>
-    <p>Get to know my background and experience</p>
-</div>
+    <!-- Header -->
+    <div class="header">
+        <h1>About Me</h1>
+        <p>Get to know my background and experience</p>
+    </div>
 
     <!-- Navigation -->
     <div class="navbar">
@@ -23,19 +23,19 @@
         <a href="about_me.html" class="active">About Me</a>
         <a href="project_me.html">Projects</a>
         <a href="contact_me.html">Contact</a>
-       <a href="#" onclick="toggleDarkMode()" class="dark-toggle" style="cursor:pointer; margin-left:auto;">🌙</a>
+        <a href="#" onclick="toggleDarkMode()" class="dark-toggle" style="cursor:pointer; margin-left:auto;">🌙</a>
     </div>
 
     <!-- Main Layout -->
     <div class="row">
         <!-- Sidebar -->
         <div class="side">
-            <h2> Personal Info</h2>
-            <p><strong> Address:</strong> 60 M.Cruz, Barangka, Marikina City</p>
-            <p><strong> Phone:</strong> +63 962 091 5738</p>
-            <p><strong> Email:</strong> Samwellgoyena@Gmail.com</p>
+            <h2>Personal Info</h2>
+            <p><strong>Address:</strong> 60 M.Cruz, Barangka, Marikina City</p>
+            <p><strong>Phone:</strong> +63 962 091 5738</p>
+            <p><strong>Email:</strong> Samwellgoyena@Gmail.com</p>
 
-            <h3> Computer Skills</h3>
+            <h3>Computer Skills</h3>
             <ul>
                 <li>Microsoft Excel</li>
                 <li>IT Troubleshooting</li>
@@ -45,7 +45,7 @@
                 <li>SAPUI5 & FIORI</li>
             </ul>
 
-            <h3> Soft Skills</h3>
+            <h3>Soft Skills</h3>
             <ul>
                 <li>Problem-Solving</li>
                 <li>Adaptability</li>
@@ -54,145 +54,118 @@
                 <li>Outgoing Personality</li>
             </ul>
 
-            <h3> Languages</h3>
+            <h3>Languages</h3>
             <ul>
                 <li>English (Professional)</li>
                 <li>Tagalog (Native)</li>
             </ul>
-            <!-- General Certifications (Professional Credentials) -->
-<h3>Professional Certifications</h3>
-<ul>
-    <li>
-        <a href="assets/certificates/JSE-Cert.pdf" target="_blank" class="cert-link"> JavaScript Essentials 1 (Cisco, 2024)
-        </a>
-    </li>
-    <!-- ✨ Add future certs here: CompTIA, AWS, Google, etc. -->
-</ul>
 
-<!-- Achievements -->
-<h3> Achievements</h3>
-<ul>
-    <li> 3rd Place – Word Scrabble Competition</li>
-    <li> Co-Leader, NSTP Outreach Programs</li>
-    <li> Member, Philippine Society of IT Students (PSITS)</li>
-</ul>
-
-            <h3> Certifications</h3>
+            <!-- Professional Certifications -->
+            <h3>Professional Certifications</h3>
             <ul>
-                <li>P&G SAP ABAP</li>
-                <li>SAP S/4HANA Developer</li>
-                <li>SAPUI5 & FIORI Developer</li>
-                <li>JavaScript Essentials 1 (Cisco)</li>
+                <li>
+                    <a href="assets/certificates/JSE-Cert.pdf" target="_blank" class="cert-link">
+                        JavaScript Essentials 1 (Cisco, 2024)
+                    </a>
+                </li>
             </ul>
-<!-- Resume Section (View + Download) -->
-<div class="resume-section">
-    <p> My Resume</p>
-    
-    <div class="resume-buttons">
-        <!-- VIEW: Opens PDF in browser for preview -->
-        <a href="images/Resume_Preview.jpg" target="_blank" class="btn btn-outline">
-             View
-        </a>
-        
-        <!-- DOWNLOAD: Attempts direct download -->
-        <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">
-             Download
-        </a>
-    </div>
-    
-    <p class="file-info">
-        <em> If PDF opens in browser, use the  icon in the viewer to save.</em>
-    </p>
-</div>
+
+            <!-- Achievements -->
+            <h3>Achievements</h3>
+            <ul>
+                <li>3rd Place – Word Scrabble Competition</li>
+                <li>Co-Leader, NSTP Outreach Programs</li>
+                <li>Member, Philippine Society of IT Students (PSITS)</li>
+            </ul>
+
+            <!-- Resume Section -->
+            <div class="resume-section">
+                <p>My Resume</p>
+                <div class="resume-buttons">
+                    <button onclick="openResumeModal()" class="btn btn-outline">👁️ View</button>
+                    <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">📥 Download</a>
+                </div>
+                <p class="file-info"><em>Preview without leaving the page.</em></p>
+            </div>
         </div>
+        <!-- END Sidebar -->
 
         <!-- Main Content -->
         <div class="main">
-            <h2> My Story</h2>
+            <h2>My Story</h2>
             <p>I recently graduated with a <strong>Bachelor of Science in Information Technology</strong> from AMA Computer College – Pasig Campus. My journey into IT started with curiosity about how technology works, and it has grown into a passion for solving problems and supporting users.</p>
             <p>During my OJT at <strong>Cuatrix Consulting Services (P&G Project)</strong>, I worked as a QA and Tech Support trainee where I learned how to troubleshoot technical issues, document processes, and work closely with end-users. This experience taught me the importance of attention to detail and clear communication in IT.</p>
             <p>Before pursuing IT, I worked as a <strong>Call Center Agent at WNS Global Services (Cathay Pacific Airlines)</strong>. This role helped me develop strong communication skills, patience, and the ability to stay calm under pressure — skills that I now apply in my IT work.</p>
             <p>I'm now looking for an IT position where I can combine my <strong>technical knowledge</strong> with my <strong>customer service experience</strong>. I am eager to grow in the IT field and continue learning new systems.</p>
             <hr>
 
-            <h2> Work Experience</h2>
+            <h2>Work Experience</h2>
 
-<div class="experience-item">
-    <h3>Data & Consultant Support Intern</h3>
-    <p><strong>Cuatrix Consulting Services Company Limited (P&G Project)</strong></p>
-    <p>
-        <em>April 2025 – July 2025</em><br>
-        Blk 1, Lot 21, Villa Carmen Subdivision, Novaliches, Quezon City, 1117 Metro Manila
-    </p>
-    <ul>
-        <li>Extracted, organized, and validated operational data for reporting and process improvements</li>
-        <li>Supported consultants with structured documentation, data summaries, and workflow tracking</li>
-        <li>Identified file inconsistencies and performed basic system troubleshooting</li>
-        <li>Maintained secure file handling and ensured compliance with enterprise data standards</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Data & Consultant Support Intern</h3>
+                <p><strong>Cuatrix Consulting Services Company Limited (P&G Project)</strong></p>
+                <p><em>April 2025 – July 2025</em><br>
+                Blk 1, Lot 21, Villa Carmen Subdivision, Novaliches, Quezon City, 1117 Metro Manila</p>
+                <ul>
+                    <li>Extracted, organized, and validated operational data for reporting and process improvements</li>
+                    <li>Supported consultants with structured documentation, data summaries, and workflow tracking</li>
+                    <li>Identified file inconsistencies and performed basic system troubleshooting</li>
+                    <li>Maintained secure file handling and ensured compliance with enterprise data standards</li>
+                </ul>
+            </div>
 
-<div class="experience-item">
-    <h3>Travel Account Specialist</h3>
-    <p><strong>WNS Global Services Philippines Inc. (Cathay Pacific Account)</strong></p>
-    <p>
-        <em>April 2023 – July 2024</em><br>
-        Travel Account • WNS Global Services Philippines Inc.<br>
-        C, Tera Tower @ Bridgetown, Eulogio Rodriguez Jr. Ave, Quezon City
-    </p>
-    <ul>
-        <li>Utilized booking and internal systems to manage flight reservations and travel arrangements</li>
-        <li>Processed transactions and updated customer records with accuracy</li>
-        <li>Resolved travel-related system and account concerns while maintaining proper documentation</li>
-        <li>Ensured high-quality customer support through efficient case handling</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Travel Account Specialist</h3>
+                <p><strong>WNS Global Services Philippines Inc. (Cathay Pacific Account)</strong></p>
+                <p><em>April 2023 – July 2024</em><br>
+                Travel Account • WNS Global Services Philippines Inc.<br>
+                C, Tera Tower @ Bridgetown, Eulogio Rodriguez Jr. Ave, Quezon City</p>
+                <ul>
+                    <li>Utilized booking and internal systems to manage flight reservations and travel arrangements</li>
+                    <li>Processed transactions and updated customer records with accuracy</li>
+                    <li>Resolved travel-related system and account concerns while maintaining proper documentation</li>
+                    <li>Ensured high-quality customer support through efficient case handling</li>
+                </ul>
+            </div>
 
-<div class="experience-item">
-    <h3>Compliance Analyst</h3>
-    <p><strong>Inspiro Relia, Inc</strong></p>
-    <p>
-        <em>January 2023 – February 2023</em><br>
-        6th Floor, Mega One Building, Welcome Rotonda, Quezon City
-    </p>
-    <ul>
-        <li>Identified individuals exploiting stolen information or engaging in deceptive practices</li>
-        <li>Detected phishing patterns and monitored criminal trends in digital transactions</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Compliance Analyst</h3>
+                <p><strong>Inspiro Relia, Inc</strong></p>
+                <p><em>January 2023 – February 2023</em><br>
+                6th Floor, Mega One Building, Welcome Rotonda, Quezon City</p>
+                <ul>
+                    <li>Identified individuals exploiting stolen information or engaging in deceptive practices</li>
+                    <li>Detected phishing patterns and monitored criminal trends in digital transactions</li>
+                </ul>
+            </div>
 
-<div class="experience-item">
-    <h3>Sales and Service Specialist</h3>
-    <p><strong>Inspiro Relia, Inc</strong></p>
-    <p>
-        <em>November 2022 – January 2023</em><br>
-        6th Floor, Mega One Building, Welcome Rotonda, Quezon City
-    </p>
-    <ul>
-        <li>Handled sales-related concerns and processed new customer orders</li>
-        <li>Tracked shipments and investigated delivery issues</li>
-        <li>Managed customer accounts and resolved service inquiries</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Sales and Service Specialist</h3>
+                <p><strong>Inspiro Relia, Inc</strong></p>
+                <p><em>November 2022 – January 2023</em><br>
+                6th Floor, Mega One Building, Welcome Rotonda, Quezon City</p>
+                <ul>
+                    <li>Handled sales-related concerns and processed new customer orders</li>
+                    <li>Tracked shipments and investigated delivery issues</li>
+                    <li>Managed customer accounts and resolved service inquiries</li>
+                </ul>
+            </div>
 
-<div class="experience-item">
-    <h3>Volunteer Encoder</h3>
-    <p><strong>RESBAKUNA – Kasanga ng BIDA</strong></p>
-    <p>
-        <em>November 2021</em><br>
-        Quezon St, Tagum, Davao del Norte
-    </p>
-    <ul>
-        <li>Encoded health data for community vaccination programs</li>
-        <li>Assisted in organizing government healthcare documentation</li>
-        <li>Supported data recording for public health services</li>
-    </ul>
-</div>
+            <div class="experience-item">
+                <h3>Volunteer Encoder</h3>
+                <p><strong>RESBAKUNA – Kasanga ng BIDA</strong></p>
+                <p><em>November 2021</em><br>
+                Quezon St, Tagum, Davao del Norte</p>
+                <ul>
+                    <li>Encoded health data for community vaccination programs</li>
+                    <li>Assisted in organizing government healthcare documentation</li>
+                    <li>Supported data recording for public health services</li>
+                </ul>
+            </div>
 
-<hr>
+            <hr>
 
-            <h2> Education</h2>
-
+            <h2>Education</h2>
             <div class="experience-item">
                 <h3>Bachelor of Science in Information Technology</h3>
                 <p><strong>AMA Computer College – Pasig Campus</strong></p>
@@ -201,26 +174,23 @@
             </div>
             <hr>
 
-            <h2> Activities & Achievements</h2>
-
+            <h2>Activities & Achievements</h2>
             <div class="experience-item">
                 <h3>Co-Leader, NSTP (National Service Training Program)</h3>
                 <p>Assisted in organizing outreach programs, providing support for the elderly and childcare during school activities.</p>
             </div>
-
             <div class="experience-item">
                 <h3>3rd Place – Word Scrabble Competition</h3>
                 <p>Recognized for strong vocabulary and strategic thinking in a school event.</p>
             </div>
-
             <div class="experience-item">
                 <h3>Member, Philippine Society of Information Technology Students (PSITS)</h3>
                 <p>Engaged in IT-related activities and networking with fellow students.</p>
             </div>
             <hr>
 
-            <h2> Certifications</h2>
-            <ul style="list-style: disc; margin-left: 20px; color: var(--text-dark);">
+            <h2>Certifications</h2>
+            <ul style="list-style: disc; margin-left: 20px;">
                 <li><strong>P&G SAP ABAP Certificate</strong></li>
                 <li><strong>P&G SAP S/4HANA Developer Certificate</strong></li>
                 <li><strong>P&G SAPUI5 & FIORI Developer Certificate</strong></li>
@@ -231,15 +201,38 @@
             <!-- Call to Action -->
             <div style="text-align: center;">
                 <p>Interested in working together?</p>
-                <a href="contact_me.html" class="btn">Contact Me</a>
-                <a href="project_me.html" class="btn" style="background:transparent; color:#1abc9c; border:1px solid #1abc9c;">View Projects</a>
+                <div style="margin-top: 15px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                    <a href="contact_me.html" class="btn">Contact Me</a>
+                    <!-- FIXED: Use btn-outline for readable color -->
+                    <a href="project_me.html" class="btn btn-outline">View Projects</a>
+                </div>
             </div>
         </div>
+        <!-- END Main Content -->
     </div>
+    <!-- END .row -->
 
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2026 SAM G. | IT Professional</p>
+    </div>
+
+    <!-- ✅ RESUME MODAL (Placed HERE - at end of body, BEFORE script) -->
+    <div id="resumeModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content" style="max-width: 900px; padding: 20px;">
+            <span class="close-modal" onclick="closeResumeModal()">&times;</span>
+            <h3 style="text-align: center; margin-bottom: 15px;">📄 My Resume</h3>
+            <div style="text-align: center;">
+                <img src="images/Resume_Preview.jpg" alt="Resume Preview" 
+                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="assets/Resume-Goyena.pdf" download="Samantha-Goyena-IT-Resume.pdf" class="btn">📥 Download Full PDF</a>
+            </div>
+            <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">
+                Click X or outside to close
+            </p>
+        </div>
     </div>
 
     <script src="js/script.js"></script>

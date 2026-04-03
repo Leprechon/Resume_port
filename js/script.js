@@ -189,6 +189,31 @@ document.querySelectorAll('.modal-content').forEach((modal) => {
     });
 });
 
+// Resume Modal Functions
+function openResumeModal() {
+    const modal = document.getElementById('resumeModal');
+    if (modal) { modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+}
+function closeResumeModal() {
+    const modal = document.getElementById('resumeModal');
+    if (modal) { modal.style.display = 'none'; document.body.style.overflow = 'auto'; }
+}
+
+// Add to existing window.onclick
+window.onclick = function(event) {
+    // ... existing modal checks ...
+    if (event.target === document.getElementById('resumeModal')) closeResumeModal();
+}
+
+// Add to existing keydown listener
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        // ... existing closes ...
+        closeResumeModal();
+    }
+});
+
+
 /* ============================================
    ✅ Console Log for Debugging (Remove in Production)
    ============================================ */
